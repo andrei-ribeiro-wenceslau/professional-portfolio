@@ -14,7 +14,7 @@ N/A
 
 ## Usage
 
-To access the website please click on the following link [Project Website Link](https://andrei-ribeiro-wenceslau.github.io/module-1-challenge/)
+To access the website please click on the following link [Project Website Link](https://andrei-ribeiro-wenceslau.github.io/professional-portfolio/)
 
 ## Credits
 
