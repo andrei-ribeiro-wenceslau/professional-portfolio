@@ -3,7 +3,7 @@ Repo for my professional portfolio website
 
 ## Description
 
-This project is to develop my professiona portfolio website using HTML and CSS and the best pracices regarding responsive design.
+This project is to develop my professional portfolio website using HTML and CSS and the best pracices regarding responsive design.
 
 ## Website Screenshot
 ![Website Screenshot](https://github.com/andrei-ribeiro-wenceslau/professional-portfolio/blob/main/assets/images/professional-portfolio-website-screenshot.png "Website Screenshot")
