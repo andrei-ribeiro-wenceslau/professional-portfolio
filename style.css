@@ -173,6 +173,16 @@ sets the flex properties to control the width, adjusts font size, aligns the con
   flex-basis: 100%;
 }
 
+/* Styles elemenrs with the id "image-title". It sets a specific font color, bakcground color, and margin and padding  */
+
+#image-title{
+  color: rgba(49,52,61,255);
+  background-color: #90c7c9;
+  margin-top: 300px;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+
 /* Style elements with the class "p1". The first block sets a black and white background image and adjusts its size. 
 The second block changes the background image on hover. */
 
