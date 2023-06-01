@@ -1,17 +1,25 @@
+/* Sets margin and padding to 0 for all elements on the page and sets the font family. */
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Removes the default underline styling for anchor elements. */
+
 a {
   text-decoration: none;
 }
+
+/* Sets the background color of the entire page */
 
 body{
   background-color: #ededf6;
 }
 
+/* Styles a header element. It uses flexbox to horizontally align its children and sets a background color. 
+The header has a width of 100% and a fixed height of 80 pixels. */
 
 header {
     display: flex;
@@ -22,9 +30,14 @@ header {
     height: 80px;
 }
 
+/* Sets the position of figure elements to be relative. This allows absolute positioning of its child elements. */
+
 figure{
   position: relative;
 }
+
+/* Styles h2 elements within a figure element. It positions the heading absolutely within the figure container,
+ giving it a background color, text color, font size, and padding. */
 
 figure h2{
   position: absolute;
@@ -36,12 +49,16 @@ figure h2{
   padding: 10px;
 }
 
+/* Styles a navigation nav element. It uses flexbox to horizontally align its children and sets a minimum width and right margin. */
+
 nav{
     display: flex;
     justify-content: space-between;  
     min-width: 350px;
     margin-right: 5px;
 }
+
+/* This block styles anchor elements within a navigation element. It adds right margin, a bottom border, font size, font family, and a specific color. */
 
 nav a{
   margin-right: 20px;
@@ -51,6 +68,8 @@ nav a{
   color: #92cccd;
 }
 
+/* This block styles an element with the ID name. It sets a background color, padding, text color, and font family. */
+
 #name {
   background-color: #92cccd;
   padding: 2px 2px 2px 40px;
@@ -58,11 +77,15 @@ nav a{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* This block styles an element with the ID "hero". It sets a background image, width of 100%, and a fixed height of 200 pixels. */
+
 #hero{
   background-image: url("assets/images/banner.jpg");
   width: 100%;
   height: 200px;
 }
+
+/* styles images within a figure element. It adds left and top margins, a black border, and a border radius of 10 pixels. */
 
 figure img{
   margin-left: 10px;
@@ -71,6 +94,9 @@ figure img{
   border-radius: 10px;
 }
 
+/* style the main content area. The first block sets a maximum width of 90% and centers it 
+horizontally on the page. The second block adds a bottom margin to the last child of the main element. */
+
 main{
   max-width: 90%;
   margin: 0 auto 0 auto;
@@ -78,6 +104,9 @@ main{
 main:last-child{
   margin-bottom: 20px;
 }
+
+/* Styles a section with the class "section-area". It uses flexbox to display its children in a row,
+ allows wrapping, stretches the children vertically, adds top margin, and distributes the space between the children. */
 
 .section-area{
   display: flex;
@@ -88,10 +117,15 @@ main:last-child{
   justify-content: space-between;
 } 
 
+/* styles div elements within the section. It sets the flex properties to control the width of the divs and adds left padding. */
+
 .section-area div{
   flex: 0 0 82%;
   padding-left: 5px;
 }
+
+/* This block styles h2 elements within the section. It adds a right border, padding, 
+sets the flex properties to control the width, adjusts font size, aligns the content to the end, and changes the text color. */
 
 .section-area h2{
   border-right: 4px solid #4d607d;
@@ -102,6 +136,9 @@ main:last-child{
   display: flex;
   color: #445876;
 }
+
+/* Styles p elements within the section. It sets the text color, font size, font family, and justifies the text. */
+
 .section-area p{
   color: rgba(49,52,61,255);
   font-size: 1.5em;
@@ -109,11 +146,15 @@ main:last-child{
   text-align: justify;
 }
 
+/* Styles elements with the class "flex-box". It uses flexbox to display its children in a row, allows wrapping, and centers them horizontally. */
+
 .flex-box{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/* Styles elements with the class "a-box". It adds a border, sets minimum and maximum height, uses flexbox to display its children, sets the flex basis, and adds margins. */
 
 .a-box{
   border: 5px solid #90c7c9;
@@ -125,10 +166,15 @@ main:last-child{
   margin: 1px;
 } 
 
+/* Styles the first child of elements with the class "a-box". It sets a specific minimum height and flex basis to expand it to full width. */
+
 .a-box:first-child {
   min-height: 400px;
   flex-basis: 100%;
 }
+
+/* Style elements with the class "p1". The first block sets a black and white background image and adjusts its size. 
+The second block changes the background image on hover. */
 
 .p1{
   background-image: url("assets/images/horiseon-website-bw.png");
@@ -137,6 +183,10 @@ main:last-child{
 .p1:hover{
   background-image: url("assets/images/horiseon-website.png");
 }
+
+/* These blocks style elements with the class "coming-soon". The first block sets a black and white background image, 
+adjusts its size, and centers it. The second block changes the background image on hover. */
+
 .coming-soon{
   background-image: url("assets/images/coming-soon-bw.jpg");
   background-size:contain;
@@ -146,6 +196,8 @@ main:last-child{
   background-image: url("assets/images/coming-soon.jpg");
 }
 
+/* Styles anchor a elements within a footer element. It sets a specific text color, adds a bottom border, adjusts font size, and adds right margin. */
+
 footer a {
   color: #445876;
   border-bottom: 3px solid #445876;
@@ -153,7 +205,11 @@ footer a {
   margin-right: 100px;
 }
 
+/* These styles are specific to screens with a maximum width of 768 pixels and will override any conflicting styles 
+for the respective elements when the screen size meets the specified criteria. */
+
 @media screen and (max-width: 768px) {
+
   header{
     display: block;
   }
@@ -163,7 +219,6 @@ footer a {
   figure img{
     display: none;
   }
-
   .section-area h2{
     border-right: none;
     border-bottom: 4px solid #4d607d;
@@ -171,12 +226,10 @@ footer a {
     justify-content: none;
     margin-bottom: 20px;
   }
-
   .section-area div {
     display: block;
     flex: 0 0 90%;
   }
-
   footer a {
     margin-bottom: 10px;
     display: block;
