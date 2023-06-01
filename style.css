@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  background-color: #ededf6;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(49,52,61,255);
+    width: 100%;
+    height: 80px;
+}
+
+figure{
+  position: relative;
+}
+
+figure h2{
+  position: absolute;
+  right: 100px;
+  top:110px;
+  background-color: #92cccd;
+  color: rgba(49,52,61,255);
+  font-size: 2.5em;
+  padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;  
+    min-width: 350px;
+    margin-right: 5px;
+}
+
+nav a{
+  margin-right: 20px;
+  border-bottom: 3px solid darkcyan;
+  font-size: 1.3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #92cccd;
+}
+
+#name {
+  background-color: #92cccd;
+  padding: 2px 2px 2px 40px;
+  color: rgba(49,52,61,255);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#hero{
+  background-image: url("assets/images/banner.jpg");
+  width: 100%;
+  height: 200px;
+}
+
+figure img{
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+main{
+  max-width: 90%;
+  margin: 0 auto 0 auto;
+}
+main:last-child{
+  margin-bottom: 20px;
+}
+
+.section-area{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 50px;
+  justify-content: space-between;
+} 
+
+.section-area div{
+  flex: 0 0 82%;
+  padding-left: 5px;
+}
+
+.section-area h2{
+  border-right: 4px solid #4d607d;
+  padding: 1px 20px 1px 1px;
+  flex: 0 0 15%;
+  font-size: 2.3rem;
+  justify-content: flex-end;
+  display: flex;
+  color: #445876;
+}
+.section-area p{
+  color: rgba(49,52,61,255);
+  font-size: 1.5em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.flex-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.a-box{
+  border: 5px solid #90c7c9;
+ 
+  min-height:150px; 
+  max-height:150px;
+  display: flex;
+  flex-basis: calc(50% - 1em);
+  margin: 1px;
+} 
+
+.a-box:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.p1{
+  background-image: url("assets/images/horiseon-website-bw.png");
+  background-size:cover
+}
+.p1:hover{
+  background-image: url("assets/images/horiseon-website.png");
+}
+.coming-soon{
+  background-image: url("assets/images/coming-soon-bw.jpg");
+  background-size:contain;
+  background-position: center;
+}
+.coming-soon:hover{
+  background-image: url("assets/images/coming-soon.jpg");
+}
+
+footer a {
+  color: #445876;
+  border-bottom: 3px solid #445876;
+  font-size: 1.3em;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  header{
+    display: block;
+  }
+  figure{
+    position: inherit;
+  }
+  figure img{
+    display: none;
+  }
+
+  .section-area h2{
+    border-right: none;
+    border-bottom: 4px solid #4d607d;
+    flex:none;
+    justify-content: none;
+    margin-bottom: 20px;
+  }
+
+  .section-area div {
+    display: block;
+    flex: 0 0 90%;
+  }
+
+  footer a {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+}
